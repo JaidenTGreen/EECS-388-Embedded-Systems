@@ -1,22 +1,22 @@
 #include <stdio.h>
 #include <string.h>
-
+//works
 int main()
 {
-    char input[] = {};
+    char input[5];
     char elem;
-    int output;
-    int temp;
 
     printf("Enter a number: \n");
-    scanf("%c", &input);
+    scanf("%s", &input);
 
-    for (int i = 0; i < 4; i++){
-        elem = input[i];
-        
-    }
 
-    switch (elem){
+
+    for (int i = 0; input[i] != '\0'; i++)
+    {
+      elem = input[i];
+
+      switch (elem)
+        {
         case '0':
             printf("0000");
             break;
@@ -71,6 +71,7 @@ int main()
         case 'f':
             printf("1111");
             break;
+        }
     }
 
 }
